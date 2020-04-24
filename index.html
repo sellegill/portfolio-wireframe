@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savannah's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar" id="myNavbar">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#contact">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <main role="main">
+
+    <header role="banner">
+        <!-- HOME -->
+     <div id="home" class="content-section">
+        <div class="container">
+        <div class="row">
+        <div class="welcome">
+              <h1>WELCOME</h1>
+          <p>Hello my name is Savannah and I’m a fullstack web developer</p>
+          <div class="portfolio-button">
+            <a href="#portfolio">View my Portfolio</a>
+        </div>
+
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+
+
+    <!-- ABOUT -->
+  <section id="bio">       
+  <div id="about" class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="bio-section">
+          <h1>ABOUT</h1>
+          <p>Get to know me a little better</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa beatae perferendis molestias dolores nihil dignissimos non, deserunt similique commodi quod, quaerat error itaque impedit eligendi iste possimus quas nulla eius!</p>
+      </div>
+    </div>    
+  </div>
+ </section>
+
+
+
+        <!-- Portfolio -->
+
+ <section id="port">
+ <div id="portfolio" class="content-section">
+    <div class="container">
+      <div class="row">
+          <h1>PORTFOLIO</h1>
+          <p>Below you'll find some of my recent work.</p>
+        </div>
+
+
+
+        <div class="picture">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/arch/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="picture">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/nature/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="picture">
+          <div class="thumbnail">
+            <img src="https://placeimg.com/768/456/people/grayscale" alt="Project Dummy">
+            <div class="caption">
+              <h4>Sample Project #3</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+ </section>
+
+
+
+
+     <!-- Contact Section-->
+     <section id="contact-box">
+        <div id="contact" class="content-section">
+            <div class="container">
+                
+
+                <div class="row">
+                  <div class="column">
+                    <h4>Don't be shy! Say Hello!</h4>
+
+                    <form action="/action_page.php">
+
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" required="" placeholder="Enter your name." data-validation-required-message="Please enter your name.">
+                      <br>
+
+                    
+
+                      <label for="email">Email </label>
+                      <input type="text" id="email" name="email" placeholder="Enter your email " required="" data-validation-required-message="Please enter your email address.">
+                      <br>
+
+                    
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                      <br>
+
+                      
+                      <input type="submit" value="Submit">
+
+                      
+                    
+
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+        </div>
+     </section>
+
+      
+
+    </main>
+
+    <footer role="footer-content">
+        <div class="social-content">
+
+            <!-- LinkedIn Icon Link -->
+            <div class="icon">
+               <a href=""><img src="http://media.dmnews.com/images/2017/01/23/linkedinlogoinitials_1139504.jpg"  class="contact-icon" alt="LinkedIn Icon"></a>
+           </div> 
+        
+   
+   
+           <!-- Gmail Icon Link-->
+           <div class="icon">
+               <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/New_Logo_Gmail.svg/1200px-New_Logo_Gmail.svg.png" class="contact-icon" alt="Gmail Icon"></a>
+           </div>
+           
+           
+   
+   
+   
+   
+           <!-- Github Icon Link-->
+           <div class="icon">
+               <a href="https://github.com/sellegill"><img src="https://image.freepik.com/free-icon/github-cat-in-a-circle_318-41747.jpg" class="contact-icon" alt="Github icon"></a>
+           </div>
+
+
+        
+        
+
+    </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
