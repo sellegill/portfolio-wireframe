@@ -1,38 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(photography-of-body-of-water-and-mountains-1544880.jpg); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
 
+    
 }
 
-/*----Navbar----*/
+   /* Style the container/contact section */
+   .container {
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding-bottom: 20px;
+  }
+
+/* Navbar */
 .navbar {
-    background: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+.name-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+  color: white;
+  
+  
+}
+
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+}
+
+.navbar-links li {
+  list-style-type: none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  
+}
+
+.navbar-links li:hover {
+  background: rgb(201,102,146);
+  background: linear-gradient(45deg, 
+  rgba(201,102,146,1) 0%, 
+  rgba(228,175,205,1) 20%, 
+  rgba(216,177,209,1) 36%, 
+  rgba(185,182,220,1) 54%, 
+  rgba(168,184,226,1) 78%, 
+  rgba(148,187,233,1) 100%);
+
     overflow: hidden;
 }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
-    font-size: 20px; 
-    justify-content: space-around;
+/* Handmade Hamburger */
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
 
-.navbar a:hover{
-    background-color: #ddd;
-    color: black;
-    } 
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  
 
-.navbar .icon {
-    display: none;
 }
+
+
+/* Welcome */
+.welcome h1{
+  font-size: 70px;
+  font-weight: 700;
+
+}
+
+
+
+
+
+
+
+/* Portfolio Button */
+.portfolio-button, a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+
+}
+
+.portfolio-button {
+  background: rgb(201,102,146);
+  background: linear-gradient(45deg, 
+  rgba(201,102,146,1) 0%, 
+  rgba(228,175,205,1) 20%, 
+  rgba(216,177,209,1) 36%, 
+  rgba(185,182,220,1) 54%, 
+  rgba(168,184,226,1) 78%, 
+  rgba(148,187,233,1) 100%);
+   
+   width: 23%;
+   border-radius: 10px;
+
+    
+}
+
+
+/* Portfolio Section */
+
+.caption {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.caption a:hover {
+color: palevioletred;
+
+}
+
+.caption h4{
+  color: #ffffff;
+  font-size: 20;
+  font-weight: 600;
+
+}
+
+.caption p {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.languages img{
+  width: 30%;
+  height: auto;
+}
+
+
+
+
+
+
 
 
  /* Style inputs */
@@ -45,6 +182,11 @@ input[type=text], select, textarea {
     resize: vertical;
   }
   
+
+  textarea {
+    height: 150px;
+
+  }
   input[type=submit] {
     background-color: grey;
     color: white;
@@ -54,56 +196,129 @@ input[type=text], select, textarea {
   }
   
   input[type=submit]:hover {
-    background-color: black;
+    background-color: palevioletred;
   }
-   /* Style the container/contact section */
-.container {
-    border-radius: 5px;
-   background-color: lightgray;
-    padding: 10px;
-  }
+
   
-   /*Create two columns that float next to eachother */
+   /* Message Board */
   .column {
     float: center;
     width: 50%;
+    
+
 
   }
+
   
-  /* Clear floats after the columns 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  
+  
+  
+
+  
+  .footer {
+    padding-bottom: 30px;
+    
+    
   }
-  */
-  
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
   
-
   
+  /*social media icon*/
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    float: center;
+    
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+    
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-github {
+    background: #2c4762;
+    color: white;
+  }
 
 
 
 
-/* Mobile sized devices */
+/* Mobile sized devices including android screens*/
 
-@media screen and (max-width: 400px){
-    .navbar a:not(:first-child) {
-        display: none;}
+@media screen and ( max-width: 450px){
 
-    .navbar a.icon {
-        float: right;
-        display: block;
-    }
+  .toggle-button {
+    display: flex;
+}
+
+.navbar-links {
+    display: none;
+   width: 100%;
+}
+
+.navbar-links ul{
+    flex-direction: column;
+    width: 100%;
+ }
+
+ .navbar-links li {
+     text-align: center;
+ }
+
+ .navbar-links li a{
+    padding: .5rem 1rem;
+}
+
+.navbar-links.active {
+    display: flex;
+ }
+
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+#home {
+    padding-top: 15px;
+    padding-bottom: 50px;
+    color: white;
+
+}
 
    .content-section {
         text-align: center;
         padding: 20px;
    }
 
-   .welcome {
-       padding-bottom: 50px;
+   .welcome h1{
+        font-size: 50px;
+        font-weight: 700;
+   }
+
+   .welcome p {
+    padding-bottom: 50px;
+    padding-top: 5px;
    }
 
    img {
@@ -112,30 +327,30 @@ input[type=text], select, textarea {
 
    }
 
-   .column, input[type=submit] {
+
+   /*Portfolio Button */
+   .portfolio-button, a {
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    
+   
+   }
+
+
+
+
+   .column {
     width: 95%;
     margin-top: 0;
   }
 
-  /* Create three equal columns that floats next to each other for FOOTER */
-   
-.icon {
-      width: 25%;
-      height: auto;
-      float: left;
-      padding: 10px;
-      margin-left: 30px;
-
+  
+  .input[type=submit] {
+    width: 35%;
   }
 
-  
 
-    /* Clear floats after the columns */
-    .icon:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
 
 
 }
@@ -144,23 +359,7 @@ input[type=text], select, textarea {
 /* Tablet sized devices */
 
 @media screen and (min-width: 700px){
-    .navbar .responsive {
-        position: relative;
-    }
-
-
-    .navbar .responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .navbar .responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-
-    }
+    
 
     .content-section {
         text-align: center;
@@ -182,26 +381,8 @@ input[type=text], select, textarea {
     height: auto;
    }
 
-   /* Create three equal columns that floats next to each other for FOOTER */
-       
-   .icon {
-    width: 25%;
-    height: auto;
-    float: left;
-    padding: 50px;
-    margin-left: 50px;
-
-  }
-
-
-
-  /* Clear floats after the columns */
-  .icon:after {
-      content: "";
-      display: table;
-      clear: both;
-      
-    }
+   
+   
 
     .column, form {
     
@@ -242,12 +423,11 @@ input[type=text], select, textarea {
         text-align: center;
         padding: 50px;
         font-size: 30px;
+        padding-bottom: 100px;
         
    }
 
-   .welcome {
-    padding-bottom: 50px;
-   }
+   
 
    img {
     width: 70%;
@@ -273,48 +453,27 @@ input[type=text], select, textarea {
 
 
 
-      /*
-
-      .column, input[type=submit] {
-        width: 55%;
-        margin-top: 0;
-        padding: 20px;
-        justify-content: center;
-        
-      }
-
-      */
-
-      
-    
-      /* Create three equal columns that floats next to each other for FOOTER */
-       
-    .icon {
-          display: inline-flex;  
-          float: center;
-          margin-right: 15px;
-      }
-    
-      
-    
-        /*Clear floats after the columns */
-        .icon:after {
-            content: "";
-            display: table;
-            clear: both;
-          }
 
           .column, form {
-    
-            width: 70%;
-            margin-left: 90px;
-            margin-right: 100px;
-            padding-top: 20px;
-            display: block;
-             float: right;
-             background-color: lightgray;
-           
-        
+            width: 80%;
+           padding-top: 20px;
+            display: inline-block;
+           align-items: center;
+            
+          }
+
+          .column label {
+            float: left;
+            justify-content: space-between;
+          }
+
+
+          .column {
+            display: flex;
+            justify-content: center;
+            
+            
+
           }
 
 
